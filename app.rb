@@ -21,7 +21,7 @@ links.each do |link|
   tempfile = Down.download link, 
     content_length_proc: -> (content_length) { puts "Iniciando download: #{content_length} k" },
     progress_proc:       -> (progress)       { puts "Down: #{progress} k" }
-  FileUtils.mv(tempfile.path, "/Users/frankyston/Desktop/downs/#{tempfile.original_filename}.mp3")
+  FileUtils.mv(tempfile.path, "#{Dir.pwd}/downs/#{tempfile.original_filename}.mp3")
   puts "Done #{link}"
 end
 
