@@ -1,7 +1,3 @@
-# http://docs.seattlerb.org/mechanize/GUIDE_rdoc.html
-# https://stackoverflow.com/questions/29292643/scraping-a-site-that-requires-login-username-and-password-on-two-separate-pages
-# https://www.twilio.com/blog/download-image-files-ruby
-
 require "down"
 require "fileutils"
 require 'JSON'
